@@ -91,7 +91,7 @@ This is a simple React app that allows you to manage albums. You can fetch and d
 
 ## Hosted App
 
-The app is hosted at [insert_hosted_app_link_here].
+The app is hosted at .https://album-list-qpxngpw61-ajay-agrawals-projects.vercel.app/
 
 ```
 
