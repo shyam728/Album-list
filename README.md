@@ -1,70 +1,98 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Albums List React App
 
-## Available Scripts
+This is a simple React app that allows you to manage albums. You can fetch and display albums from an API, add new albums, update existing albums, and delete albums.
+## Screenshoot
+<img width="960" alt="album-1" src="https://github.com/shyam728/Album-list/assets/116745835/5a5273f5-00a8-4189-b2a2-ca29d9ad2e48">
+<img width="960" alt="Screenshot 2023-12-16 202748" src="https://github.com/shyam728/Album-list/assets/116745835/2300b3d2-732d-4a00-bcf7-2ef567a1f0e8">
+<img width="960" alt="Screenshot 2023-12-16 202849" src="https://github.com/shyam728/Album-list/assets/116745835/a34ce56d-0286-4b93-a160-dd41caf02931">
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+1. **Fetch and Show Albums:**
+   - The app fetches albums from the [JSONPlaceholder API](https://jsonplaceholder.typicode.com/albums) and displays them.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. **Add an Album:**
+   - You can add a new album by making a POST call to the API. Note that this is a dummy request, and the data won't be saved on the server.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. **Update an Album:**
+   - You can update an existing album by making a PUT call to the API. This is also a dummy call.
 
-### `npm test`
+4. **Delete an Album:**
+   - You can delete an album by making a DELETE call to the API. Again, this is a dummy call.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Folder Structure
 
-### `npm run build`
+```plaintext
+|-- src
+|   |-- components
+|       |-- AlbumList.js
+|       |-- AddAlbumForm.js
+|       |-- UpdateAlbumForm.js
+|   |-- services
+|       |-- api.js
+|   |-- App.js
+|   |-- index.js
+|-- public
+|-- README.md
+|-- .gitignore
+|-- package.json
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## How to Start the Project
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/albums-list-react-app.git
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Navigate to the project directory:
+   ```bash
+   cd albums-list-react-app
+   ```
 
-### `npm run eject`
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Start the development server:
+   ```bash
+   npm start
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. Open your browser and go to [http://localhost:3000](http://localhost:3000) to view the app.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Code and Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- The code is structured following best practices, with components in the `components` folder and services in the `services` folder.
 
-## Learn More
+- Meaningful variable and function names have been used for better readability.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Code is indented consistently for improved maintainability.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Comments
 
-### Code Splitting
+- Code includes comments to explain complex logic or important decisions.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Design
 
-### Analyzing the Bundle Size
+- The app design is kept simple, focusing on functionality.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Styling is done in a way that enhances user experience.
 
-### Making a Progressive Web App
+## Creativity
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Although the focus is on functionality, creative elements are added where appropriate.
 
-### Advanced Configuration
+## Video
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+[Link to Video](insert_youtube_video_link_here)
 
-### Deployment
+## Hosted App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+The app is hosted at .https://album-list-qpxngpw61-ajay-agrawals-projects.vercel.app/
 
-### `npm run build` fails to minify
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Please replace placeholders like `insert_youtube_video_link_here` and `insert_hosted_app_link_here` with the actual links once you have recorded the video and hosted the app.
