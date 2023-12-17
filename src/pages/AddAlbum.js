@@ -1,10 +1,9 @@
-import { useState , useEffect } from 'react'
+import { useState  } from 'react'
 
 import { Navbar } from '../component/Navbar'
+import { ToastContainer , toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
 
 
 
@@ -17,8 +16,8 @@ const handleSubmit = () =>{
   const newData = {id : albumId , title :albumTitle};
   props.setData((prevData) =>[...prevData , newData]);
  
-  alert("Added Succesfully You Can see on Album List in Last")
-
+  toast.success("Added Succesfully You Can see on Album List in Last")
+ 
 }
 
 // useEffect(() => {
@@ -93,6 +92,7 @@ const handleSubmit = () =>{
         </div>
       </div>
     </div>
-
+   {/* Add ToastContainer here */}
+   <ToastContainer />
     </>)
 }

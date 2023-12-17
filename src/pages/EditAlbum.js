@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Navbar } from '../component/Navbar'
 
-import { Link,  useNavigate } from 'react-router-dom';
+import {  useNavigate } from 'react-router-dom';
 
 
 
@@ -16,7 +16,7 @@ export const EditAlbum = (props) =>{
   const getUpdateData = () => {
    
     const id = props.album.id;
-    alert(id)
+   
 
     // Use the state values directly instead of querying the DOM
     const updatedTitle = updateTitle || props.album.title;

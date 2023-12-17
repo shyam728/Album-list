@@ -4,8 +4,8 @@ import { AddAlbum } from "./pages/AddAlbum";
 import { AlbumList } from "./component/AlbumList";
 import { DummyCheck } from "./component/DummyCheck";
 import { EditAlbum } from "./pages/EditAlbum";
-
-
+import { ToastContainer , toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import { createRoutesFromElements , Route , RouterProvider ,createBrowserRouter } from "react-router-dom";
 
@@ -19,7 +19,8 @@ function App() {
     const DeleteAlbumFromList = (id) => {
       fetch(`https://jsonplaceholder.typicode.com/albums/${id}`, { method: 'DELETE' });
       const newAlbums = data.filter((album) => album.id !== id);
-      alert('Your Album Deleted successfully');
+      toast.success('Your Album Deleted successfully');
+
       setData(newAlbums);
     };
 
@@ -59,7 +60,7 @@ function App() {
     updatedAlbums[index] = updatedAlbum;
     setData(updatedAlbums);
 
-    alert('Update Successfully done');
+    toast.success('Update Successfully done');
   };
 
   const routes = createRoutesFromElements(<>
@@ -97,7 +98,8 @@ function App() {
      
      
         <RouterProvider router={router} />
-        
+         {/* Add ToastContainer here */}
+      <ToastContainer />
     </div>
   );
 }
