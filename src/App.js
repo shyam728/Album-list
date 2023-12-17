@@ -2,7 +2,6 @@ import { useEffect ,useState } from "react";
 import { Home } from "./pages/Home";
 import { AddAlbum } from "./pages/AddAlbum";
 import { AlbumList } from "./component/AlbumList";
-import { DummyCheck } from "./component/DummyCheck";
 import { EditAlbum } from "./pages/EditAlbum";
 import { ToastContainer , toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -67,7 +66,6 @@ function App() {
   <Route path="/" element={<Home data={data}  loading={loading} setData={setData} DeleteAlbumFromList={DeleteAlbumFromList} setUpdateAlbum={setUpdateAlbumFunc} />}/>
   <Route path="/addalbum" element={<AddAlbum setData={setData}  />}/>
   <Route path="/albumlist" element={<AlbumList albumData={data} loadings={loading}/>}/>
-  <Route path="/card" element={<DummyCheck/>}/>
   <Route path="/editalbum" element={<EditAlbum    album={updateAlbum} updateAlbumInList={updateAlbumInList}/>}/>
    
   </>)
